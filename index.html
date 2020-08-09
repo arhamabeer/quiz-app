@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body onload="showQues(0)">
+
+    <h1 style="text-align: center; color: crimson; font-size: 45px;">
+        JAVASCRIPT QUIZ APPLICATION
+    </h1>
+    <div id="main" class="main">
+        <h1 class="question" id="question">
+
+        </h1>
+        <p class="opt" onclick="avtiveClass(this)"></p><br>
+        <p class="opt" onclick="avtiveClass(this)"></p><br>
+        <p class="opt" onclick="avtiveClass(this)"></p><br>
+        <p class="opt" onclick="avtiveClass(this)"></p><br>
+        <button onclick="nextQues()" id="nextBtn">Next Question</button>
+    </div>
+
+
+    <div id="result_div" style="display: none;">
+        <h2 id="score"></h2>
+        <h3 id="res"></h3>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
